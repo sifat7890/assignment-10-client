@@ -38,7 +38,7 @@ const UpdateMovie = () => {
     const onSubmit = (updatedMovie) => {
         updatedMovie.rating = rating;
 
-        fetch(`http://localhost:8000/movie/${movie._id}`, {
+        fetch(`https://assignment-10-server-eight-smoky.vercel.app/movie/${movie._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -47,8 +47,7 @@ const UpdateMovie = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                if (data.modifiedCount > 0) {
+                 if (data.modifiedCount > 0) {
                     Swal.fire({
                         title: "Success",
                         text: "Movies updated successfully",
@@ -62,11 +61,11 @@ const UpdateMovie = () => {
 
 
 
-    const genres = ["Comedy", "Drama", "Horror", "Action", "Romance"];
+    const genres = ["Comedy", "Drama", "Horror", "Action", "Romance","Documentary","Adventure"];
     const releaseYears = [2024, 2023, 2022, 2021, 2020];
 
     return (
-        <div className={`max-w-2xl mx-auto p-6 ${themeToggle}   shadow rounded-lg mt-24 p-11   border border-red-600`}>
+        <div className={`max-w-2xl mx-auto p-6 ${themeToggle}   shadow rounded-lg mt-24 p-11   border border-red-600`} >
             <div className="flex items-center gap-3 mb-8">
                 <Film className="w-8 h-8 text-red-700" />
                 <h2 className="text-3xl font-bold text-red-700 ">

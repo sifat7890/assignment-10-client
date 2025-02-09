@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../Home/Footer';
 import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Loading from '../Loading/Loading';
 
 const Root = () => {
@@ -24,7 +25,7 @@ const Root = () => {
         });
       }, []);
     return (
-        <div>
+        <div >
           {loading&&<Loading></Loading>}
             <Navbar></Navbar>
             <Outlet></Outlet>

@@ -9,7 +9,7 @@ const Home = () => {
     const movieFeaturedCards = useLoaderData();
  
      return (
-        <div className='relative'>
+        <div className='relative' >
             <Banner></Banner>
             <FeatureMovies movieFeaturedCards={movieFeaturedCards} ></FeatureMovies>
             <UpComingMovies></UpComingMovies>

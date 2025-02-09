@@ -7,7 +7,7 @@ const UpComingMovies = () => {
     const { upComingData } = useContext(MovieContext)
 
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='w-11/12 mx-auto' >
             <div className=" flex justify-between mt-16 ">
                 <h2 className="text-3xl   font-bold  center ">Coming Soon</h2>
                 <button className="  px-4 py-3   transition duration-300 border-2 border-red-700   hover:bg-red-700 text-red-600 hover:text-white rounded-lg text-sm font-bold font-sans">

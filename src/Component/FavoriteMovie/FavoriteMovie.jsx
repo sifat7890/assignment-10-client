@@ -8,23 +8,20 @@ import { MdDeleteSweep } from 'react-icons/md';
 const FavoriteMovie = ({ favoriteMovie }) => {
     const { favoriteMovies, setFavoriteMovies } = useContext(MovieContext)
 
-    console.log(favoriteMovie);
-    const handleDelete = _id => {
-        fetch(`http://localhost:8000/favorite/${_id}`, {
+     const handleDelete = _id => {
+        fetch(`https://assignment-10-server-eight-smoky.vercel.app/favorite/${_id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                if (data.deletedCount > 0) {
+                 if (data.deletedCount > 0) {
                     Swal.fire({
                         title: "Deleted!",
                         text: "Your file has been deleted.",
                         icon: "success"
                     });
                     const remaining = favoriteMovies.filter(favMovie => favMovie._id !== _id);
-                    console.log('deleted id2', _id);
-                    console.log('deleted id1', remaining);
+                
 
 
                     setFavoriteMovies(remaining)
@@ -34,7 +31,7 @@ const FavoriteMovie = ({ favoriteMovie }) => {
     }
 
     return (
-        <div className="relative group   rounded-lg overflow-hidden shadow-lg cursor-pointer" data-aos="fade-up">
+        <div className="relative group   rounded-lg overflow-hidden shadow-lg cursor-pointer" >
             <img
                 src={favoriteMovie.poster}
                 alt={favoriteMovie.title}

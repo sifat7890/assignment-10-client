@@ -15,20 +15,18 @@ const MovieProvider = ({ children }) => {
     const [bannerData, setBannerData] = useState([])
     const [upComingData, setUpComingData] = useState([])
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
-    console.log("coming",upComingData);
-    
+     
     
     useEffect(() => {
-        fetch('http://localhost:8000/movie')
+        fetch('https://assignment-10-server-eight-smoky.vercel.app/movie')
         .then(res => res.json())
         .then(data => setLoadedMovieDetails(data))
         .catch(error => console.error("Error fetching movies:", error))
     }, [])
-    console.log(loadedMovieDetails);
-    
+     
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:8000/favorite/${user.email}`)
+            fetch(`https://assignment-10-server-eight-smoky.vercel.app/favorite/${user.email}`)
             .then(res => res.json())
             .then(data => setFavoriteMovies(data))
             .catch(error => console.error("Error fetching favorites:", error));

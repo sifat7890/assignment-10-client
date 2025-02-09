@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 const FeaturedMovie = ({ movieFeaturedCard }) => {
  
     return (
-        <div className="relative group   rounded-lg overflow-hidden shadow-lg cursor-pointer" data-aos="fade-up" data-aos-duration="1000">
+        <div >
+            <div className="relative group   rounded-lg overflow-hidden shadow-lg cursor-pointer"  >
         <img
             src={movieFeaturedCard.poster}
             alt={movieFeaturedCard.title}
@@ -27,6 +28,7 @@ const FeaturedMovie = ({ movieFeaturedCard }) => {
             </Link> 
         </div>
     </div>
+        </div>
     );
 };
 

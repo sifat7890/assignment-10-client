@@ -2,12 +2,11 @@ import { PlayCircle } from 'lucide-react';
 import React from 'react';
 
 const UpComingMovie = ({ upComingMovieDetails }) => {
-    console.log("pailam coming data", upComingMovieDetails);
-
+ 
     const colSpanClass = upComingMovieDetails.id === 2 ? "lg:col-span-2" : "col-span-1";
 
     return (
-        <div className={` text-white   ${colSpanClass} `}>
+        <div className={` text-white   ${colSpanClass} `} >
             <div className="container mx-auto">
                 <div className="relative w-full grid overflow-hidden rounded-lg group cursor-pointer">
                      <img

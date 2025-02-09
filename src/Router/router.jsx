@@ -26,13 +26,13 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:8000/topRated')
+        loader: () => fetch('https://assignment-10-server-eight-smoky.vercel.app/topRated')
 
       },
       {
         path: "/movies",
         element: <Movies></Movies>,
-        loader: () => fetch('http://localhost:8000/movie'),
+        loader: () => fetch('https://assignment-10-server-eight-smoky.vercel.app/movie'),
       },
       {
         path: "/movie/:id",
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
           <PrivateRoute>
             <MovieDetails></MovieDetails>
           </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:8000/movie/${params.id}`)
+        loader: ({ params }) => fetch(`https://assignment-10-server-eight-smoky.vercel.app/movie/${params.id}`)
 
       },
       {
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
           <PrivateRoute>
             <UpdateMovie></UpdateMovie>
           </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:8000/movie/${params.id}`)
+        loader: ({ params }) => fetch(`https://assignment-10-server-eight-smoky.vercel.app/movie/${params.id}`)
 
       },
       {

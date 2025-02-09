@@ -11,8 +11,7 @@ const PrivateRoute = ({ children }) => {
       return <Loading></Loading>
     }
 
-    console.log(location);
-    if (user && user.email) {
+     if (user && user.email) {
         return children
     }
 

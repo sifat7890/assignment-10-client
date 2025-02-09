@@ -15,13 +15,12 @@ const MovieDetails = () => {
     const navigate = useNavigate()
     const handleDelete = _id => {
 
-        fetch(`http://localhost:8000/movie/${_id}`, {
+        fetch(`https://assignment-10-server-eight-smoky.vercel.app/movie/${_id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                if (data.deletedCount > 0) {
+                 if (data.deletedCount > 0) {
                     Swal.fire({
                         title: "Deleted!",
                         text: "Your file has been deleted.",
@@ -45,9 +44,8 @@ const MovieDetails = () => {
         const movieID = movieDetails._id
 
         const favoriteMovie = { title, genre, duration, releaseYear, rating, poster, email, movieID }
-        console.log(favoriteMovie);
-
-        fetch('http://localhost:8000/favorite', {
+ 
+        fetch('https://assignment-10-server-eight-smoky.vercel.app/favorite', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -66,24 +64,21 @@ const MovieDetails = () => {
 
     return (
         <div className="relative w-full h-screen flex items-center bg-cover bg-center px-12 backdrop-brightness-50"
-            style={{ backgroundImage: `url(${movieDetails.poster})` }}>
+            style={{ backgroundImage: `url(${movieDetails.poster})` }} >
             <div className="absolute inset-0 bg-black/60"></div>
 
 
-            <div className=" z-10 sm:flex md:flex lg:flex gap-16 w-full justify-center  items-center">
-                {/* movieDetails Poster */}
-                <img
+            <div className=" z-10 sm:flex md:flex lg:flex gap-16 w-full justify-center  items-center" >
+                 <img
                     src={movieDetails.poster}
                     alt={movieDetails.title}
                     className="h-[500px]    lg:h-[500px] rounded-lg shadow-lg"
                 />
 
-                {/* movieDetails Info */}
-                <div className="text-white">
+                 <div className="text-white">
                     <h1 className="text-5xl font-bold text-yellow-400">{movieDetails.title}</h1>
 
-                    {/* Meta Info */}
-                    <div className="flex items-center gap-4 mt-4 text-lg">
+                     <div className="flex items-center gap-4 mt-4 text-lg">
                         <div className="flex items-center gap-1">
                             <Calendar size={20} />
                             <span>{movieDetails.releaseYear}</span>
@@ -98,19 +93,16 @@ const MovieDetails = () => {
                         </div>
                     </div>
 
-                    {/* Genres */}
-                    <div className="flex gap-2 mt-4">
+                     <div className="flex gap-2 mt-4">
 
                         <span className="bg-red-600 px-3 py-1 rounded-lg text-sm font-medium">
                             {movieDetails.genre}
                         </span>
                     </div>
 
-                    {/* Description */}
-                    <p className="mt-6 text-gray-300 text-lg max-w-2xl">{movieDetails.summary}</p>
+                     <p className="mt-6 text-gray-300 text-lg max-w-2xl">{movieDetails.summary}</p>
 
-                    {/* Buttons */}
-                    <div className="mt-6 flex gap-4">
+                     <div className="mt-6 flex gap-4">
                         <button className="flex gap-1.5 mt-2 px-4 py-3   transition duration-300 border-2 border-red-700 bg-black/50 hover:bg-red-700 text-red-600 hover:text-white rounded-lg text-base font-bold font-sans "><Play className=' fill-red-700' /> Watch</button>
                         <button onClick={handleAddToFavorite} className="mt-2 px-4 py-3   transition duration-300 border-2 border-red-700 bg-black/50 hover:bg-red-700 text-red-600 hover:text-white rounded-lg text-sm font-bold font-sans">
                             <RiFolderAddFill size={24} />

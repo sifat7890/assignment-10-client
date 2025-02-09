@@ -19,8 +19,7 @@ const SignUp = () => {
     const email = e.target.email.value;
     const photo = e.target.photo.value;
     const password = e.target.password.value;
-    console.log(name, email, password, photo);
-
+ 
     const hasUppercase = /[A-Z]/.test(password);
     const hasLowercase = /[a-z]/.test(password);
     const isValidLength = password.length >= 6;
@@ -50,8 +49,7 @@ const SignUp = () => {
         const newUser = {
           name, email
         }
-        console.log('this data use fro mongodb', newUser);
-        fetch('http://localhost:8000/users', {
+         fetch('https://assignment-10-server-eight-smoky.vercel.app/users', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -84,7 +82,7 @@ const SignUp = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen   text-white py-12 px-4 bg-[url('https://thumbs.dreamstime.com/b/movie-cinema-premiere-poster-design-red-seats-vector-background-template-85885948.jpg')] bg-cover bg-center">
-      <div className="card w-96  bg-black/80 backdrop-blur-xs rounded-2xl p-8 shadow-2xl border border-red-500 mt-12">
+      <div className="card w-96  bg-black/80 backdrop-blur-xs rounded-2xl p-8 shadow-2xl border border-red-500 mt-12" >
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
             <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const MovieCart = ({movieCart}) => {
      
     return (
-        <div className="relative group   rounded-lg overflow-hidden shadow-lg cursor-pointer" data-aos="fade-up">
+        <div className="relative group   rounded-lg overflow-hidden shadow-lg cursor-pointer"  >
         <img
             src={movieCart.poster}
             alt={movieCart.title}

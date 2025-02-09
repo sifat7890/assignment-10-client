@@ -10,8 +10,7 @@ import { MovieContext } from '../MovieProvider/MovieProvider';
 
 const Banner = () => {
     const { bannerData } = useContext(MovieContext)
-    console.log("banner paisi", bannerData);
-
+ 
 
 
 

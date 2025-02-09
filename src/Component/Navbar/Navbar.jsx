@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     <div
       className="absolute top-0 left-0 w-full z-50 bg-transparent"
-    >
+       >
       <div className=" w-11/12 mx-auto">
         <div className="navbar  ">
           <div className="navbar-start">

@@ -7,9 +7,8 @@ const Movies = () => {
     const[movieCarts,setMovieCarts] =useState(movieData)
 
     const [search, setSearch] = useState("")
-    console.log(search);
-    useEffect(() => {
-        fetch(`http://localhost:8000/movie?searchParams=${search}`)
+     useEffect(() => {
+        fetch(`https://assignment-10-server-eight-smoky.vercel.app/movie?searchParams=${search}`)
             .then((res) => res.json())
             .then((data) => {
               setMovieCarts(data);
@@ -19,7 +18,7 @@ const Movies = () => {
 
     return (
         <div className='mt-16'>
-            <div className="text-center mb-16" data-aos="fade-up" data-aos-duration="1500">
+            <div className="text-center mb-16"  data-aos-duration="1500">
                 <h2 className="text-4xl font-bold mb-4">All movies</h2>
 
             <div className='w-11/12 mx-auto flex justify-end  '> 
