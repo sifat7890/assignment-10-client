@@ -1,0 +1,33 @@
+ [
+    {
+      "id": 1,
+      "title": "Stranger Things",
+      "image": "https://occ-0-92-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABY1lgHLARXhiipGC_8D2x1i4TPMy_k0n-TsE7GJBt96mIXfz4hCYkTmiJhBXH0v_xdr_0Z99muRipunQBBdVq3gjShE8I7LOTtav-2kHnAS6PGAGY9wd9hTC6eORizm85Y62SA.webp?r=c68",  
+      "rating": 7.8,
+      "releaseDate": "2022-07-01",
+      "language": "EN",
+      "description":
+        "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow..."
+    },
+    {
+      "id": 2,
+      "title": " HOUSE OF THE DRAGON",
+     "image": "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_201/public/images/2024/03/21/hotd.jpg",
+      "rating": 9.1,
+      "releaseDate": "2023-08-10",
+      "language": "EN",
+      "description":
+        "Miles Morales returns for another adventure across the multiverse..."
+    },
+    {
+     "id": 3,
+     "title": "JOHN WICK 4",
+     "image": "https://images7.alphacoders.com/130/1307356.jpg",
+     "rating": 8.5,
+     "releaseDate": "2022-07-26",
+     "language": "EN",
+     "description":
+        "The Merc with a Mouth teams up with Wolverine for an action-packed adventure..."
+    }
+  ]
+  

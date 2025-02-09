@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "title": "Small Things Like These",
+      "category": "Movies",
+      "status": "Coming Soon",
+      "type": "Adventure",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNWAcnEMhgJrTtLFHi6rOJ4drP25onmK88VSeWT0M9sTnaDxv4"
+    },
+    {
+      "id": 2,
+      "title": "Monkey Man",
+      "category": "Movies",
+      "status": "Coming Soon",
+      "type": "Action",
+      "image": "https://movies.universalpictures.com/media/monkeyman-poster-65b30172d7845-1.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Megan 2.0",
+      "category": "Movies",
+      "status": "Coming Soon",
+      "type": "Horror",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/M3GAN_2.0_Theatrical_Poster.jpg/440px-M3GAN_2.0_Theatrical_Poster.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Frozen 3",
+      "category": "Movies",
+      "status": "Coming Soon",
+      "type": "Animation",
+      "image": "https://i.ytimg.com/vi/kCCMzVAnjtI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDUgcdqXi2mBb_OSXYdmGP5blIUfg"
+    },
+    {
+      "id": 5,
+      "title": "Wednesday",
+      "category": "Movies",
+      "status": "Coming Soon",
+      "type": "Horror",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKDOhOKsrp9aPcrtjdZbFkFtltZZfB_Nsq3oSmJVlSz7DFD7dNxsUl15UkYZv0maX96pv"
+    },
+    {
+      "id": 6,
+      "title": "You",
+      "category": "TV",
+      "status": "Coming Soon",
+      "type": "Thriller ",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTVlYmRhMWQtNmE0Yi00ODM1LWEzMWEtNTQzZGZhODRmZTE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "The Witcher",
+      "category": "TV",
+      "status": "Coming Soon",
+      "type": "TV",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTktMDZkMy00NDU1LWIxM2UtODg5OGFiNmRhNDBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    }
+  ]
+  
